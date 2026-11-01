@@ -1,7 +1,7 @@
 FROM node:18-bullseye-slim AS frontend
 
 WORKDIR /app
-
+ENV NODE_OPTIONS=--openssl-legacy-provider
 COPY package*.json ./
 RUN npm install --legacy-peer-deps --no-audit --no-fund
 
