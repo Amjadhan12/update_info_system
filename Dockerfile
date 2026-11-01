@@ -1,4 +1,3 @@
-@'
 FROM node:18-bullseye-slim AS frontend
 
 WORKDIR /app
@@ -56,4 +55,3 @@ ENV PORT=10000
 EXPOSE 10000
 
 CMD ["bash", "-lc", "sed -i \"s/10000/${PORT:-10000}/g\" /etc/apache2/ports.conf /etc/apache2/sites-available/000-default.conf && apache2-foreground"]
-'@ | Set-Content -Encoding ASCII Dockerfile
