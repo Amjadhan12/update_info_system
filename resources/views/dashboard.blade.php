@@ -150,7 +150,8 @@
                                         </div>
                                     </div>
                                     <a href="{{ route('received.index') }}"
-                                        class="card-footer footer-hover small text-center text-light border-0 p-2">وصولی
+                                        class="card-
+                                         footer-hover small text-center text-light border-0 p-2">وصولی
                                         کول<i class="fas fa-arrow-circle-right pl-2"></i></a>
                                 </div>
                                 <!-- Card -->

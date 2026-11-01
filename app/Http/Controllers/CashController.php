@@ -94,7 +94,7 @@ class CashController extends Controller
      *
      * @param  \App\Models\Cash  $cash
      * @return \Illuminate\Http\Response
-     */
+     */ 
     public function destroy(Cash $cash)
     {
         //
