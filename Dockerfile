@@ -3,7 +3,7 @@ FROM node:18-bullseye-slim AS frontend
 WORKDIR /app
 
 COPY package*.json ./
-RUN npm ci
+RUN npm install --legacy-peer-deps --no-audit --no-fund
 
 COPY . .
 RUN npm run production
